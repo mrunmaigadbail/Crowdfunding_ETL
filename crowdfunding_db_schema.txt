@@ -1,0 +1,37 @@
+category
+-
+category_id VARCHAR(10) PK
+category VARCHAR(50)
+last_updated TIMESTAMP
+
+subcategory
+-
+subcategory_id VARCHAR(10) PK
+subcategory VARCHAR(50)
+last_updated TIMESTAMP
+
+campaign
+-
+cf_id INTEGER PK
+contact_id INTEGER FK >- contacts.contact_id
+copmany_name VARCHAR(50)
+description VARCHAR(50)
+goal INTEGER
+pledged INTEGER
+outcome VARCHAR(25)
+backers_count INTEGER
+country VARCHAR(5)
+currency VARCHAR(5)
+launched_date TIMESTAMP
+end_date TIMESTAMP
+category_id VARCHAR(10) FK >- category.category_id
+subcategory_id VARCHAR(10) FK >- subcategory.subcategory_id
+last_updated TIMESTAMP
+
+contacts
+-
+contact_id INTEGER PK
+first_name VARCHAR(25)
+last_name VARCHAR(25)
+email VARCHAR(50)
+last_updated TIMESTAMP

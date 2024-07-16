@@ -14,10 +14,10 @@ campaign
 -
 cf_id INTEGER PK
 contact_id INTEGER FK >- contacts.contact_id
-copmany_name VARCHAR(50)
-description VARCHAR(50)
-goal INTEGER
-pledged INTEGER
+company_name VARCHAR(50)
+description VARCHAR(100)
+goal float
+pledged float
 outcome VARCHAR(25)
 backers_count INTEGER
 country VARCHAR(5)
